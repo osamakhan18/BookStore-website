@@ -3,11 +3,11 @@
     width: 180px;
     height: 180px;
     margin: auto;
-    margin-top: 10px;
+    /* margin-top: 10px; */
    
 }
 
-nav {
+#navbar {
 
    position: sticky;
    top: 0;
@@ -27,6 +27,22 @@ nav {
     
 }
 
+#bestseller{
+
+    border: 2px solid black;
+    width: 250px;
+    height: 70px;
+    padding: 0.2rem 0.3rem;
+    /* /* display: flex;
+  margin: auto;  */
+  /* margin-right: 0px;  */
+  margin-top: 50px;
+  margin-bottom: 50px;
+    border-radius: 10px ;
+    padding-left: 30px;
+   background-color: rgb(211, 188, 131);
+
+}
 #box1{
     margin-top: 40px;
    
@@ -107,6 +123,18 @@ text-align: center;
 
 }
 
+#books{
+    border: 2px solid black;
+    width: 150px;
+    height: 60px;
+    padding: 0.2rem 0.3rem;
+    display: flex;
+  margin: auto; 
+ 
+    border-radius: 10px ;
+    padding-left: 30px;
+   background-color: rgb(211, 188, 131);
+}
 .book1{
     width: 380px;
     height:400px;
@@ -215,4 +243,77 @@ footer{
     background-color: rgb(247, 245, 244);
     border-radius: 20px;
 }
+
+
+
+
+@media (max-width: 400px) {
+    #navbar {
+        flex-direction: column;
+        height: auto;
+        align-items: center; /* Center align items vertically */
+    }
+
+    #navbar a {
+        width: 100%;
+        text-align: center; /* Center align text within anchor tags */
+        padding: 10px; /* Adjust padding as needed */
+    }
+
+    .selling {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .sellingbox {
+        margin-bottom: 20px;
+    }
+
+    .mainbook {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .book1 {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    #contact {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    #contact h4 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
